@@ -1,4 +1,23 @@
-const exercise = ["leg lifts", "jumping jacks", "pushups", "walking lunges", "squats", "crunches", "butterfly kicks","crocodile crawls","wall sits","toe touches","plank","wild card","mountain climbers","bicycle kicks","egg-beaters","reverse lunges","bear crawls","gorilla crawls","crab walk","knee switches","squat walking"];
-const amount = ["one minute", "ninety seconds","fifteen reps","twenty reps","thirty reps","FIFTY REPS","until it BURNS (minimum twenty)"];
+const exercises = {
+  "leg lifts": [6, "reps"],
+  "jumping jacks": [24, "seconds"],
+  "pushups": [6,"reps"],
+  "walking lunges": [8, "reps"],
+  "squats": [10, "reps"],
+  "crunches": [12, "seconds"],
+  "buttefly kicks": [12, "seconds"],
+  "crocodile crawls": [4, "reps"],
+  "wall sits": [12, "seconds"],
+  "plank": [12, "seconds"],
+  "mountain climbers": [18, "seconds"],
+  "egg beaters": [12, "seconds"],
+  "reverse lunges": [6, "reps"],
+  "bear crawls": [8, "reps"],
+  "gorilla crawls": [6, "reps"],
+  "crab walks": [6, "reps"],
+  "squat walking": [8, "reps"]
+}
 
-console.log(exercise[Math.floor(Math.random()*exercise.length)] + "for" + amount[Math.floor(Math.random()*amount.length)]);
+const keys = Object.keys(exercises);
+const exercise = keys[Math.floor(Math.random()*keys.length)];
+console.log(exercise, "for", exercises[exercise][0]*(Math.ceil(Math.random()*3)+2), exercises[exercise][1]);

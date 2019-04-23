@@ -1,0 +1,19 @@
+{
+  "name": "hratx-dice-roller",
+  "version": "1.0.0",
+  "description": "lets get shredded",
+  "main": "exercise.js",
+  "scripts": {
+    "start": "start index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanSBecker/HRATX-Exercise-Dice.git"
+  },
+  "author": "Jonathan Becker <jonathan@becker-clan.org>",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "reactdom": "^2.0.0"
+  }
+}

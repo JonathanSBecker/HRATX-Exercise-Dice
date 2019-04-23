@@ -4,7 +4,8 @@
   "description": "lets get shredded",
   "main": "exercise.js",
   "scripts": {
-    "start": "start index.html"
+    "start": "start index.html",
+    "exercise": "node exercise.js"
   },
   "repository": {
     "type": "git",

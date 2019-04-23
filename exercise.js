@@ -20,4 +20,5 @@ const exercises = {
 
 const keys = Object.keys(exercises);
 const exercise = keys[Math.floor(Math.random()*keys.length)];
-console.log(exercise, "for", exercises[exercise][0]*(Math.ceil(Math.random()*3)+2), exercises[exercise][1]);
+const theThing = exercise + " for " + exercises[exercise][0]*(Math.ceil(Math.random()*3)+2) + " " + exercises[exercise][1]
+document.getElementById("app").innerHTML = theThing;

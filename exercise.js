@@ -15,10 +15,19 @@ const exercises = {
   "bear crawls": [8, "reps"],
   "gorilla crawls": [6, "reps"],
   "crab walks": [6, "reps"],
-  "squat walking": [8, "reps"]
+  "squat walking": [8, "reps"],
+  "diamond pushups": [5, "reps"],
+  "decline pushups": [5, "reps"],
+  "divebombers": [6, "reps"],
+  "tricep dips": [5, "reps"]
 }
 
 const keys = Object.keys(exercises);
 const exercise = keys[Math.floor(Math.random()*keys.length)];
-const theThing = exercise + " for " + exercises[exercise][0]*(Math.ceil(Math.random()*3)+2) + " " + exercises[exercise][1]
+let theThing = exercise + " for ";
+let quantity =  exercises[exercise][0]*(Math.ceil(Math.random()*3)+2);
+let diff = quantity % 5;
+quantity -= diff;
+theThing = theThing + quantity + " " + exercises[exercise][1];
+
 document.getElementById("app").innerHTML = theThing;
